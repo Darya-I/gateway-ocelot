@@ -82,8 +82,10 @@
 
 ### Ocelot
 Описание: Ocelot - это библиотека для создания API-шлюзов в .NET. Она предназначена для перенаправления запросов на различные микросервисы. Ocelot обеспечивает такие функции, как маршрутизация, авторизация, расширяемость и многое другое. Она помогает упростить архитектуру микросервисов.
+
 Версия: 18.0.0
-Ocelot GitHub репозиторий (https://github.com/ThreeMammals/Ocelot)
+
+[Ocelot GitHub репозиторий](https://github.com/ThreeMammals/Ocelot)
 
 ### ocelot.json
 Описание конфигурации для API-шлюза Ocelot.
@@ -98,31 +100,31 @@ Ocelot GitHub репозиторий (https://github.com/ThreeMammals/Ocelot)
 
 #### Route 1
 
-- **Upstream Path Template (Шаблон входящего пути):** /
-- **Upstream Http Method (HTTP-методы входящего запроса):** GET
-- **Downstream Path Template (Шаблон исходящего пути):** /
-- **Downstream Scheme (Протокол исходящего запроса):** https
-- **Downstream Host and Ports (Хост и порт исходящего запроса):**
-  - **Host (Хост):** localhost
-  - **Port (Порт):** 7066
+- **Upstream Path Template** (Шаблон входящего пути): /
+- **Upstream Http Method** (HTTP-методы входящего запроса): GET
+- **Downstream Path Template** (Шаблон исходящего пути): /
+- **Downstream Scheme** (Протокол исходящего запроса): https
+- **Downstream Host and Ports** (Хост и порт исходящего запроса):
+  - **Host:** localhost
+  - **Port:** 7066
 
 #### Route 2
 
-- **Upstream Path Template (Шаблон входящего пути):** /gateway/projects
-- **Upstream Http Method (HTTP-методы входящего запроса):** GET, POST
-- **Downstream Path Template (Шаблон исходящего пути):** /api/projects
-- **Downstream Scheme (Протокол исходящего запроса):** https
-- **Downstream Host and Ports (Хост и порт исходящего запроса):**
+- **Upstream Path Template** (Шаблон входящего пути): /gateway/projects
+- **Upstream Http Method** (HTTP-методы входящего запроса): GET, POST
+- **Downstream Path Template** (Шаблон исходящего пути): /api/projects
+- **Downstream Scheme** (Протокол исходящего запроса): https
+- **Downstream Host and Ports** (Хост и порт исходящего запроса):
   - **Host (Хост):** localhost
   - **Port (Порт):** 7001
 
 #### Route 3
 
-- **Upstream Path Template (Шаблон входящего пути):** /gateway/projects/{Id}
-- **Upstream Http Method (HTTP-методы входящего запроса):** GET, PUT, DELETE
-- **Downstream Path Template (Шаблон исходящего пути):** /api/projects/{Id}
-- **Downstream Scheme (Протокол исходящего запроса):** https
-- **Downstream Host and Ports (Хост и порт исходящего запроса):**
+- **Upstream Path Template** (Шаблон входящего пути): /gateway/projects/{Id}
+- **Upstream Http Method** (HTTP-методы входящего запроса): GET, PUT, DELETE
+- **Downstream Path Template** (Шаблон исходящего пути): /api/projects/{Id}
+- **Downstream Scheme** (Протокол исходящего запроса): https
+- **Downstream Host and Ports** (Хост и порт исходящего запроса):
   - **Host (Хост):** localhost
   - **Port (Порт):** 7001
  
