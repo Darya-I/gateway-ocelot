@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Project.Data;
-using Project.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,8 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Добавление сервиса и его реализации в контейнер служб
-builder.Services.AddScoped<IProjectService, ProjectService>();
+
 
 // Добавление контроллеров
 builder.Services.AddControllers();
