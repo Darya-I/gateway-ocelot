@@ -1,4 +1,4 @@
-# API Getaway ocelot
+# API gateway ocelot
 ![https://img.shields.io/badge/Status-WIP-blue](https://img.shields.io/badge/Status-WIP-blue)
  
  В примере используетя всего один веб-API CRUD, связанный с однотабличной БД, так как мы разбираемся только с API шлюзом
